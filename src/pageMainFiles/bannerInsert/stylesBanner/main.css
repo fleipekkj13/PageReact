@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,1000;1,6..12,300;1,6..12,1000&family=Shadows+Into+Light&display=swap');
+.startBanner{
+    background-image: url(Images/starkEmPe.png);
+    width: 100%;
+    background-size: contain;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.starkBackBanner{
+
+    transform: translateY(-50);
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: right bottom;
+    display: none;
+    background-image: url(Images/starkBack.png);
+    background-repeat: no-repeat;
+}
+
+
+.mainBannerWhite{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 80vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.mainBannerBlack{
+    width: 100%;
+    height: 80vh;
+
+    background-image: url(Images/Screen-Shot-2018-07-04-at-4.54.08-PM.png);
+    filter: grayscale();
+
+    transition: 0.2s linear;
+
+    position: absolute;
+    top: calc(0% + 6%);
+
+    z-index: -1;
+
+    transform: translateX(-100vw);
+
+}
+
+
+.BannerContent{
+
+    position: relative;
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    gap: 1.5em;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.BannerContent.black{
+    
+    animation: showed 0.2s ease-in-out;
+
+    transform: translateX(0);
+
+    align-items: start;
+    color: rgb(255, 255, 255);
+
+    text-align: left;
+}
+
+.starkBackBanner.black{
+    transition: 0.2s linear;
+    transform: translateX(0);
+    z-index: 1;
+    animation: showede 0.2s ease-in-out;
+}
+
+.BannerContent.black h1{
+    box-shadow: -10px 10px 0px white;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+@keyframes showede {
+    0%{
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes showed {
+    0%{
+
+        transform: translateX(0);
+    }
+}
+
+.BannerContent h1{
+    font-weight: bolder;
+    font-size: 8em;
+    line-height: 130px;
+}
+
+.BannerContent p{
+    font-size: 25px;
+}
+
+#boldTextBanner {
+    color: #c10000;
+
+    padding: 3px 5px;
+
+    font-size: 20px;
+    position: static;
+    border-radius: 20px 0 20px 0;
+
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.pShaded{
+    color: #c10000;
+
+    font-size: 9em;
+
+    font-weight: bolder;
+}
+
+
+/*                                   */
+
+.BannerInputFields{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 100%;
+    margin-top: 1em;
+
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.BannerInputFields h1{
+    font-size: 4em;
+    text-align: center;
+
+    color: white;
+
+}
+
+.BannerInputFields p{
+    color: white;
+}
+
+
+.wrapper{
+    transition: 0.2s linear;
+    margin: 0 auto;
+    width: 500px;
+    position: relative;
+}
+
+.wrapper input[type='text']{
+    font-size: 15px;
+    padding: .5em;
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    border: 2px solid #c10000;
+    transition: 0.2s linear;
+
+    outline: none;
+
+    background-color: #e1e1e1  ;
+}
+
+.wrapper input[type='text']:focus{
+    background-color: white;
+}
+
+.wrapper button{
+    border-radius: 100%;
+    border: none;
+    right: 0;
+    top: 1px;
+    color: white;
+    background-color: #c10000;
+    padding: .2em;
+    position: absolute;
+}
+

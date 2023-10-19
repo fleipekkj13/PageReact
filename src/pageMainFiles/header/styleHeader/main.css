@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,1000;1,6..12,300;1,6..12,1000&display=swap');
+
+.header-class{
+
+    position: relative;
+
+    z-index: 9;
+
+    padding: 10px 5em;
+
+    font-family: 'Nunito Sans', sans-serif;
+
+    height: 100%;
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+    background-color: #fff;
+}
+.navClass{
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navClass ul{
+    display: flex;
+    list-style: none;
+    gap: 4em;
+}
+
+.navDivMain a{
+    background-color: transparent;
+    color: #0D1321;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+
+    
+    --background-color: #1D2D44;
+}
+.navDivMain a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 2px;
+    background-color: var(--background-color);
+    
+    transition: transform 300ms ease-in-out;
+    
+    transform: scaleX(0);
+}
+.navDivMain a:hover::before, .navDivMain a:focus::before{
+    transform: scaleX(1);
+}
+
+.MenuButton{
+    display: none;
+}
+
+/*                -----------------------------------             */
+
